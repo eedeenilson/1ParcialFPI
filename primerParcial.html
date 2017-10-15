@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PARCIAL I</title>
+    <link rel="stylesheet" href="css/estilos.css" type="text/css" media="all">
+  </head>
+  <body>
+    <center>
+    <div class="jugadores" id="inicio">
+      <label id="carta1">Elija el número de participantes: </label>
+      <input type="text" id="participantes" >
+      <input type="button" id="comienzo" value="Jugar!" onclick="cargarImagen()">
+    </div>
+  </center>
+  <div class="mesa">
+        <img src="" class="imagen" name="mesa"  id="n2">
+  </div>
+
+    <img src="" class="img" name="carta1"  id="n1">
+    <img src="" class="img" name="carta2"  id="n1">
+
+    <script type="text/javascript">
+
+    document.images["mesa"].src="img/mesa.png";
+
+    var misImagenes= new Array()
+    misImagenes [0]= "img/corazones/a_corazones.jpg";
+    misImagenes [1]= "img/corazones/2_corazones.jpg";
+    misImagenes [2]= "img/corazones/3_corazones.jpg";
+    misImagenes [3]= "img/corazones/4_corazones.jpg";
+    misImagenes [4]= "img/corazones/5_corazones.jpg";
+    misImagenes [5]= "img/corazones/6_corazones.jpg";
+    misImagenes [6]= "img/corazones/7_corazones.jpg";
+    misImagenes [7]= "img/corazones/8_corazones.jpg";
+    misImagenes [8]= "img/corazones/9_corazones.jpg";
+    misImagenes [9]= "img/corazones/10_corazones.jpg";
+    misImagenes [10]= "img/corazones/j_corazones.jpg";
+    misImagenes [11]= "img/corazones/q_corazones.jpg";
+    misImagenes [12]= "img/corazones/k_corazones.jpg";
+    misImagenes [13]= "img/oro/a_oro.jpg";
+    misImagenes [14]= "img/oro/2_oro.jpg";
+    misImagenes [15]= "img/oro/3_oro.jpg";
+    misImagenes [16]= "img/oro/4_oro.jpg";
+    misImagenes [17]= "img/oro/5_oro.jpg";
+    misImagenes [18]= "img/oro/6_oro.jpg";
+    misImagenes [19]= "img/oro/7_oro.jpg";
+    misImagenes [20]= "img/oro/8_oro.jpg";
+    misImagenes [21]= "img/oro/9_oro.jpg";
+    misImagenes [22]= "img/oro/10_oro.jpg";
+    misImagenes [23]= "img/oro/j_oro.jpg";
+    misImagenes [24]= "img/oro/q_oro.jpg";
+    misImagenes [25]= "img/oro/k_oro.jpg";
+    misImagenes [26]= "img/trebol/a_trebol.jpg";
+    misImagenes [27]= "img/trebol/2_trebol.jpg";
+    misImagenes [28]= "img/trebol/3_trebol.jpg";
+    misImagenes [29]= "img/trebol/4_trebol.jpg";
+    misImagenes [30]= "img/trebol/5_trebol.jpg";
+    misImagenes [31]= "img/trebol/6_trebol.jpg";
+    misImagenes [32]= "img/trebol/7_trebol.jpg";
+    misImagenes [33]= "img/trebol/8_trebol.jpg";
+    misImagenes [34]= "img/trebol/9_trebol.jpg";
+    misImagenes [35]= "img/trebol/10_trebol.jpg";
+    misImagenes [36]= "img/trebol/j_trebol.jpg";
+    misImagenes [37]= "img/trebol/q_trebol.jpg";
+    misImagenes [38]= "img/trebol/k_trebol.jpg";
+    misImagenes [39]= "img/picas/a_picas.jpg";
+    misImagenes [40]= "img/picas/2_picas.jpg";
+    misImagenes [41]= "img/picas/3_picas.jpg";
+    misImagenes [42]= "img/picas/4_picas.jpg";
+    misImagenes [43]= "img/picas/5_picas.jpg";
+    misImagenes [44]= "img/picas/6_picas.jpg";
+    misImagenes [45]= "img/picas/7_picas.jpg";
+    misImagenes [46]= "img/picas/8_picas.jpg";
+    misImagenes [47]= "img/picas/9_picas.jpg";
+    misImagenes [48]= "img/picas/10_picas.jpg";
+    misImagenes [49]= "img/picas/j_picas.jpg";
+    misImagenes [50]= "img/picas/q_picas.jpg";
+    misImagenes [51]= "img/picas/k_picas.jpg";
+
+
+    function cargarImagen(){
+      var j = Math.floor(Math.random()*52+0);
+      var k = Math.floor(Math.random()*52+0);
+      document.images["carta1"].src=misImagenes[j];
+      document.images["carta2"].src=misImagenes[k];
+    }
+    </script>
+  </body>
+</html>
