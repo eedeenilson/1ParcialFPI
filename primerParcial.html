@@ -6,25 +6,87 @@
     <link rel="stylesheet" href="css/estilos.css" type="text/css" media="all">
   </head>
   <body>
-    <center>
-    <div class="jugadores" id="inicio">
+    <div id="Jugar" class="jugadores" id="inicio">
       <label id="carta1">Elija el número de participantes: </label>
-      <input type="text" id="participantes" >
-      <input type="button" id="comienzo" value="Jugar!" onclick="cargarImagen()">
+      <input type="text" id="Participantes" >
+      <input type="button" id="Comienzo" value="Jugar!" onclick="cargarImagen()">
     </div>
-  </center>
-  <div class="mesa">
-        <img src="" class="imagen" name="mesa"  id="n2">
+    <!-- donde se colocaran las imagenes 1a= primera carta 1b= segunda carta-->
+
+    <img class="img" name="carta1"  id="jugador1a">
+    <img class="img" name="carta2"  id="jugador1b">
+    <label id="nombreJ1"> Jugador 1 </label>
+    <label id="dinero" > $ </label>
+    <br>
+    <br>
+    <input type="button" name="btn1" value="PASAR">
+    <input type="button" name="btn2" value="PAGAR">
+    <input type="button" name="btn2" value="APOSTAR">
+  <!--  <img class="img" name="carta1"  id="jugador2a">
+    <img class="img" name="carta2"  id="jugador2b">
+    <br>
+    <input type="button" name="btn1" value="PASAR">
+    <input type="button" name="btn2" value="PAGAR">
+    <input type="button" name="btn2" value="APOSTAR">
+    <img class="img" name="carta1"  id="jugador3a">
+    <img class="img" name="carta2"  id="jugador3b">
+    <br>
+    <input type="button" name="btn1" value="PASAR">
+    <input type="button" name="btn2" value="PAGAR">
+    <input type="button" name="btn2" value="APOSTAR">
+    <img class="img" name="carta1"  id="jugador4a">
+    <img class="img" name="carta2"  id="jugador4b">
+    <br>
+    <input type="button" name="btn1" value="PASAR">
+    <input type="button" name="btn2" value="PAGAR">
+    <input type="button" name="btn2" value="APOSTAR">
+    <img class="img" name="carta1"  id="jugador5a">
+    <img class="img" name="carta2"  id="jugador5b">
+    <br>
+    <input type="button" name="btn1" value="PASAR">
+    <input type="button" name="btn2" value="PAGAR">
+    <input type="button" name="btn2" value="APOSTAR"> -->
+
+  <div id="Mesa" class="mesa">
+        <img src="" class="imagen" name="mesa"  id="fondo">
   </div>
 
-    <img src="" class="img" name="carta1"  id="n1">
-    <img src="" class="img" name="carta2"  id="n1">
+  <!--<img class="img" name="carta1"  id="jugador6a">
+  <img class="img" name="carta2"  id="jugador6b">
+  <br>
+  <input type="button" name="btn1" value="PASAR">
+  <input type="button" name="btn2" value="PAGAR">
+  <input type="button" name="btn2" value="APOSTAR">
+  <img class="img" name="carta1"  id="jugador7a">
+  <img class="img" name="carta2"  id="jugador7b">
+  <br>
+  <input type="button" name="btn1" value="PASAR">
+  <input type="button" name="btn2" value="PAGAR">
+  <input type="button" name="btn2" value="APOSTAR">
+  <img class="img" name="carta1"  id="jugador8a">
+  <img class="img" name="carta2"  id="jugador8b">
+  <br>
+  <input type="button" name="btn1" value="PASAR">
+  <input type="button" name="btn2" value="PAGAR">
+  <input type="button" name="btn2" value="APOSTAR">
+  <img class="img" name="carta1"  id="jugador9a">
+  <img class="img" name="carta2"  id="jugador9b">
+  <br>
+  <input type="button" name="btn1" value="PASAR">
+  <input type="button" name="btn2" value="PAGAR">
+  <input type="button" name="btn2" value="APOSTAR">
+  <img class="img" name="carta1"  id="jugador10a">
+  <img class="img" name="carta2"  id="jugador10b">
+  <br>
+  <input type="button" name="btn1" value="PASAR">
+  <input type="button" name="btn2" value="PAGAR">
+  <input type="button" name="btn2" value="APOSTAR"> -->
 
     <script type="text/javascript">
 
-    document.images["mesa"].src="img/mesa.png";
+    document.images["mesa"].src="img/mesa.png"; // guarda la imegen de la mesa y se la manda a la etiqueta <img name="mesa">
 
-    var misImagenes= new Array()
+    var misImagenes= new Array() //guardamos todo el arreglo con las cartas
     misImagenes [0]= "img/corazones/a_corazones.jpg";
     misImagenes [1]= "img/corazones/2_corazones.jpg";
     misImagenes [2]= "img/corazones/3_corazones.jpg";
@@ -80,10 +142,10 @@
 
 
     function cargarImagen(){
-      var j = Math.floor(Math.random()*52+0);
-      var k = Math.floor(Math.random()*52+0);
-      document.images["carta1"].src=misImagenes[j];
-      document.images["carta2"].src=misImagenes[k];
+      var j = Math.floor(Math.random()*52+0); //escojer un número random
+      var k = Math.floor(Math.random()*52+0); //escojer un número random
+      document.images["jugador1a"].src=misImagenes[j]; //se asigna el número random y se le manda a la etiqueta <img name="carta1">
+      document.images["jugador1b"].src=misImagenes[k]; //se asigna el número random y se le manda a la etiqueta <img name="carta2">
     }
     </script>
   </body>
