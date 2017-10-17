@@ -234,10 +234,12 @@
 		               document.images
 		// var j = Math.floor(Math.random()*52+0); //escojer un número random
 		// var k = Math.floor(Math.random()*52+0); //escojer un número random
-		var j = misIndices[Math.floor(Math.random() * misIndices.length)]; //escoger un numero random del arreglo de las cartas
-		misIndices.splice(j, 1);
-		var k = misIndices[Math.floor(Math.random() * misIndices.length)]; //escoger un numero random del arreglo de las cartas
-		misIndices.splice(k, 1);
+		var randj = Math.floor(Math.random() * misIndices.length); //obtenemos el valor del indice de la primera carta
+    var j = misIndices[randj]; //obtenemo el valor que esta guardado en nuestro indice
+		misIndices.splice(randj, 1); //borramos el indice que ya se ocupo para que no se repitan las cartas
+		var randk = Math.floor(Math.random() * misIndices.length); //obtenemos el valor del indice de la segunda carta
+    var k = misIndices[randk]; //obtenemos el valor que esta guardado en nuesto indice
+		misIndices.splice(randk, 1); // borramos el indice que ya se ocupo para que no se repitan las cartas
 		document.images["jugador"+i+"a"].src=misImagenes[j]; //se le manda la carta seleccionada por el numero random al jugador
 		document.images["jugador"+i+"b"].src=misImagenes[k]; //se le manda la carta seleccionada por el numero random al jugador
 
