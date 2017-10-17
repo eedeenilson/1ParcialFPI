@@ -1,10 +1,13 @@
-  html, body{
+  html{
   height:95%;
   }
 
-#Mesa{
-    top: 40%
-}
+  body{
+background-image: url(../img/mesa.png);
+background-size: 550px 230px;
+background-repeat: no-repeat;
+background-position: center;
+  }
 
 #Participantes{
         width: 30px;
@@ -23,13 +26,109 @@
     margin: 1em 30%;
 }
 
-#jugador1a{
-    width: 40px;
-    height: 60px;
-}
+/* #jugador1a{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
 
-#jugador1b{
-    width: 40px;
-    height: 60px;
+/* #jugador1b{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador2a{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador2b{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador3a{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador3b{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador4a{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador4b{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador5a{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador5b{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador6a{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador6b{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador7a{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador7b{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador8a{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador8b{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador9a{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador9b{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador10a{ */
+    /* width: 40px; */
+    /* height: 60px; */
+/* } */
+
+/* #jugador10b{ */
+    /* width: 40px; */
+    /* height: 60px; */
+	/* position="center"; */
+/* } */
+
+table#table_jugadores tr td{
+	height:160px;
+	width:186px;
 }
 
