@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html onload=>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Menu Principal</title>
+    <link rel="stylesheet" href="css/pantalla.css" type="text/css" media="all">
+    <h1 class="titulo" style="text-align:center top"></h1>
+  </head>
+  <body >
+        <br><br><br><br><br><br><br><br><br><br>
+<p class="parrafo">Bienvenido a Texas Poker. Para iniciar una nueva partida,<br>
+  haz click sobre el boton Jugar</p>
+
+<input id="btn" type="button" class="botonplay" value="JUGAR" placeholder="Jugar" onclick="mensaje(), pasar()">
+<label class="nombres">INTEGRANTES: Edenilson Arana; Figueroa Gonzales; Julio Rivas </label>
+
+<script type="text/javascript">
+
+
+//esta funcion nos va a redireccionar a la pantalla donde jugaremos.
+  function pasar() {
+    window.open("../1ParcialFPI/primerParcial.html");
+  }
+
+  function mensaje(){
+
+   alert("INDICACION: para iniciar el juego debe elegir como minimo dos jugadores y como maximo 10.");
+
+  }
+</script>
+
+  </body>
+</html>

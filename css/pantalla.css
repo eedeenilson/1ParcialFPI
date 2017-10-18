@@ -1,0 +1,41 @@
+body{
+
+background-image: url(../img/poker.jpg);
+background-size: 504px 400px;
+background-repeat: no-repeat;
+width: 510px;
+height: 410px;
+
+}
+.botonplay{
+background-image: url(../img/play.ico);
+   background-color: #0000ff;
+   background-repeat: no-repeat;
+   background-size: 25px 25px;
+    height:30px;
+    width:100px;
+
+}
+
+.titulo{
+
+  background-image: url(../img/titulo.png);
+width: 490px;
+  height: 65px;
+
+}
+
+.parrafo{
+color: orange;
+font-size: 18px;
+font-style: italic;
+
+}
+
+.nombres{
+ color: white;
+ font-size: 14px;
+ font-style: oblique;
+
+
+}

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=500, initial-scale=1, maximum-scale=1">
     <title>PARCIAL I FPI</title>
     <link rel="stylesheet" href="css/estilos.css" type="text/css" media="all">
   </head>
   <body>
-    <div id="Jugar" class="jugadores" id="inicio">
+ <div id="Jugar" class="Jugadores" id="inicio">
       <label id="carta1">Elija el número de participantes: </label>
       <input type="text" id="Participantes" >
       <input type="button" id="Comienzo" value="Jugar!" onclick="cargarImagen()">
@@ -20,51 +20,57 @@
           <div id="jugador1">
             <img class="img" name="carta1"  id="jugador1a">
             <img class="img" name="carta2"  id="jugador1b">
-            <label id="nombreJ1"> Jugador 1 </label>
-            <label id="dinero" > $ </label>
+            <label class="jug" id="nombreJ1"> Jugador 1 </label>
+            <label class="jug" id="dinero1" > $ </label>
             <br>
-            <input type="button" name="btn1" value="PASAR">
-            <input type="button" name="btn2" value="PAGAR">
-            <input type="button" name="btn2" value="APOSTAR">
+            <input class="btn" type="button" name="btn1" value="PASAR">
+            <input class="btn" type="button" name="btn2" value="PAGAR">
+            <input class="btn" type="button" name="btn2" value="APOSTAR">
           </div>
         </td>
+
+        <td></td>
 
         <td>
           <div id="jugador2">
             <img class="img" name="carta1"  id="jugador2a">
             <img class="img" name="carta2"  id="jugador2b">
-            <label id="nombreJ1"> Jugador 2</label>
-            <label id="dinero" > $ </label>
+            <label class="jug" id="nombreJ1"> Jugador 2</label>
+            <label class="jug" id="dinero2" > $ </label>
             <br>
-            <input type="button" name="btn1" value="PASAR">
-            <input type="button" name="btn2" value="PAGAR">
-            <input type="button" name="btn2" value="APOSTAR">
+            <input class="btn" type="button" name="btn1" value="PASAR">
+            <input class="btn" type="button" name="btn2" value="PAGAR">
+            <input class="btn" type="button" name="btn2" value="APOSTAR">
           </div>
         </td>
+
+        <td></td>
 
         <td>
           <div id="jugador3">
             <img class="img" name="carta1"  id="jugador3a">
             <img class="img" name="carta2"  id="jugador3b">
-            <label id="nombreJ1"> Jugador 3 </label>
-            <label id="dinero" > $ </label>
+            <label class="jug" id="nombreJ1"> Jugador 3 </label>
+            <label class="jug" id="dinero3" > $ </label>
             <br>
-            <input type="button" name="btn1" value="PASAR">
-            <input type="button" name="btn2" value="PAGAR">
-            <input type="button" name="btn2" value="APOSTAR">
+            <input class="btn" type="button" name="btn1" value="PASAR">
+            <input class="btn" type="button" name="btn2" value="PAGAR">
+            <input class="btn" type="button" name="btn2" value="APOSTAR">
           </div>
         </td>
+
+        <td></td>
 
         <td>
           <div id="jugador4">
             <img class="img" name="carta1"  id="jugador4a">
             <img class="img" name="carta2"  id="jugador4b">
-            <label id="nombreJ1"> Jugador 4 </label>
-            <label id="dinero" > $ </label>
+            <label class="jug" id="nombreJ1"> Jugador 4 </label>
+            <label class="jug" id="dinero4" > $ </label>
             <br>
-            <input type="button" name="btn1" value="PASAR">
-            <input type="button" name="btn2" value="PAGAR">
-            <input type="button" name="btn2" value="APOSTAR">
+            <input class="btn" type="button" name="btn1" value="PASAR">
+            <input class="btn" type="button" name="btn2" value="PAGAR">
+            <input class="btn" type="button" name="btn2" value="APOSTAR">
           </div>
         </td>
       </tr>
@@ -74,87 +80,102 @@
           <div id="jugador5">
             <img class="img" name="carta1"  id="jugador5a">
             <img class="img" name="carta2"  id="jugador5b">
-            <label id="nombreJ1"> Jugador 5 </label>
-            <label id="dinero" > $ </label>
+            <label class="jug" id="nombreJ1"> Jugador 5 </label>
+            <label class="jug" id="dinero5" > $ </label>
             <br>
-            <input type="button" name="btn1" value="PASAR">
-            <input type="button" name="btn2" value="PAGAR">
-            <input type="button" name="btn2" value="APOSTAR">
+            <input class="btn" type="button" name="btn1" value="PASAR">
+            <input class="btn" type="button" name="btn2" value="PAGAR">
+            <input class="btn" type="button" name="btn2" value="APOSTAR">
           </div>
         </td>
 
-        <td>
+        <td></td>
 
-        </td>
+        <td></td>
 
 		<td>
-
+      <div id="cartasCentro">
+        <img class="imgs" name="carta1"  id="carta1">
+        <img class="imgs" name="carta2"  id="carta2">
+        <img class="imgs" name="carta3"  id="carta3">
+        <img class="imgs" name="carta4"  id="carta4">
+        <img class="imgs" name="carta5"  id="carta5">
+      </div>
         </td>
+
+        <td></td>
+        <td></td>
 
         <td>
           <div id="jugador6">
             <img class="img" name="carta1"  id="jugador6a">
             <img class="img" name="carta2"  id="jugador6b">
-            <label id="nombreJ1"> Jugador 6 </label>
-            <label id="dinero" > $ </label>
+            <label class="jug" id="nombreJ1"> Jugador 6 </label>
+            <label class="jug" id="dinero6" > $ </label>
             <br>
-            <input type="button" name="btn1" value="PASAR">
-            <input type="button" name="btn2" value="PAGAR">
-            <input type="button" name="btn2" value="APOSTAR">
+            <input class="btn" type="button" name="btn1" value="PASAR">
+            <input class="btn" type="button" name="btn2" value="PAGAR">
+            <input class="btn" type="button" name="btn2" value="APOSTAR">
           </div>
         </td>
       </tr>
 
 	   <tr>
         <td>
-          <div id="jugador5">
+          <div id="jugador7">
             <img class="img" name="carta1"  id="jugador7a">
             <img class="img" name="carta2"  id="jugador7b">
-            <label id="nombreJ1"> Jugador 7 </label>
-            <label id="dinero" > $ </label>
+            <label class="jug" id="nombreJ1"> Jugador 7 </label>
+            <label class="jug" id="dinero7" > $ </label>
             <br>
-            <input type="button" name="btn1" value="PASAR">
-            <input type="button" name="btn2" value="PAGAR">
-            <input type="button" name="btn2" value="APOSTAR">
+            <input class="btn" type="button" name="btn1" value="PASAR">
+            <input class="btn" type="button" name="btn2" value="PAGAR">
+            <input class="btn" type="button" name="btn2" value="APOSTAR">
           </div>
         </td>
+
+        <td></td>
 
         <td>
-          <div id="jugador6">
+          <div id="jugador8">
             <img class="img" name="carta1"  id="jugador8a">
             <img class="img" name="carta2"  id="jugador8b">
-            <label id="nombreJ1"> Jugador 8 </label>
-            <label id="dinero" > $ </label>
+            <label class="jug" id="nombreJ1"> Jugador 8 </label>
+            <label class="jug" id="dinero8" > $ </label>
             <br>
-            <input type="button" name="btn1" value="PASAR">
-            <input type="button" name="btn2" value="PAGAR">
-            <input type="button" name="btn2" value="APOSTAR">
+            <input class="btn" type="button" name="btn1" value="PASAR">
+            <input class="btn" type="button" name="btn2" value="PAGAR">
+            <input class="btn" type="button" name="btn2" value="APOSTAR">
           </div>
         </td>
 
-		        <td>
-          <div id="jugador6">
+        <td></td>
+
+		    <td>
+          <div id="jugador9">
             <img class="img" name="carta1"  id="jugador9a">
             <img class="img" name="carta2"  id="jugador9b">
-            <label id="nombreJ1"> Jugador 9 </label>
-            <label id="dinero" > $ </label>
+            <label class="jug" id="nombreJ1"> Jugador 9 </label>
+            <label class="jug" id="dinero9" > $ </label>
             <br>
-            <input type="button" name="btn1" value="PASAR">
-            <input type="button" name="btn2" value="PAGAR">
-            <input type="button" name="btn2" value="APOSTAR">
+            <input class="btn" type="button" name="btn1" value="PASAR">
+            <input class="btn" type="button" name="btn2" value="PAGAR">
+            <input class="btn" type="button" name="btn2" value="APOSTAR">
           </div>
         </td>
 
-		        <td>
-          <div id="jugador6">
+        <td></td>
+
+		    <td>
+          <div id="jugador10">
             <img class="img" name="carta1"  id="jugador10a">
             <img class="img" name="carta2"  id="jugador10b">
-            <label id="nombreJ1"> Jugador 10 </label>
-            <label id="dinero" > $ </label>
+            <label class="jug" id="nombreJ1"> Jugador 10 </label>
+            <label class="jug" id="dinero10" > $ </label>
             <br>
-            <input type="button" name="btn1" value="PASAR">
-            <input type="button" name="btn2" value="PAGAR">
-            <input type="button" name="btn2" value="APOSTAR">
+            <input class="btn" type="button" name="btn1" value="PASAR">
+            <input class="btn" type="button" name="btn2" value="PAGAR">
+            <input class="btn" type="button" name="btn2" value="APOSTAR">
           </div>
         </td>
       </tr>
@@ -242,7 +263,7 @@
 		misIndices.splice(randk, 1); // borramos el indice que ya se ocupo para que no se repitan las cartas
 		document.images["jugador"+i+"a"].src=misImagenes[j]; //se le manda la carta seleccionada por el numero random al jugador
 		document.images["jugador"+i+"b"].src=misImagenes[k]; //se le manda la carta seleccionada por el numero random al jugador
-
+    document.getElementById("dinero"+i).innerHTML=5000;
 	}
     }
 	//creamos una funcion para limpiar las imagenes de las cartas para los Participantes
@@ -251,7 +272,7 @@
 		document.images
 		document.images["jugador"+i+"a"].src=""; //se manda el vacio de las cartas
 		document.images["jugador"+i+"b"].src=""; //se manda el vacio de las cartas
-
+    document.getElementById("dinero"+i).innerHTML= "$"
 	}
 	}
     </script>

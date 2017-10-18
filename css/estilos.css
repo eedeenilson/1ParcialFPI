@@ -3,21 +3,17 @@
   }
 
   body{
-background-image: url(../img/mesa.png);
-background-size: 550px 230px;
-background-repeat: no-repeat;
-background-position: center;
+      height: 0%;
+    background-image: url(../img/mesa.png);
+    background-size: 550px 230px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #C16100
+
   }
 
-#Participantes{
-        width: 30px;
-}
-
-#fondo{
-    width: 700px;
-    height: 300px;
-    padding: 1em 3em;
-    margin: 1em 18%;
+.Participantes{
+        width: 10px;
 }
 
 #Jugar{
@@ -26,109 +22,27 @@ background-position: center;
     margin: 1em 30%;
 }
 
-/* #jugador1a{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador1b{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador2a{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador2b{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador3a{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador3b{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador4a{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador4b{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador5a{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador5b{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador6a{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador6b{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador7a{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador7b{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador8a{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador8b{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador9a{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador9b{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador10a{ */
-    /* width: 40px; */
-    /* height: 60px; */
-/* } */
-
-/* #jugador10b{ */
-    /* width: 40px; */
-    /* height: 60px; */
-	/* position="center"; */
-/* } */
-
-table#table_jugadores tr td{
-	height:160px;
-	width:186px;
+.img{
+    width: 35px; 
+    height: 55px;
 }
 
+.imgs{
+    width: 25px;
+    height: 55px;
+}
+
+.btn{
+    font-size: 10px;
+    width:60px;
+}
+
+.jug{
+    font-size: 14px;
+}
+
+table#table_jugadores tr td{
+	height:190px;
+	width:186px;
+    margin: 100px; 
+}
