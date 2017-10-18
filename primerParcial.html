@@ -286,6 +286,8 @@ de 5000. Sus funciones son obtenerPosicion, obtenerCartas la cual devuelve un ar
 de las posiciones de las cartas, obtenerCapital el cual me devuelde el valor que tenga el capital (inicialmente son 5000),
  apostar, pagar y pasar.
 */
+
+
       var Jugador = function(iPosicion, iCarta1, iCarta2)
       {
            this.posicion = iPosicion;
@@ -300,7 +302,7 @@ de las posiciones de las cartas, obtenerCapital el cual me devuelde el valor que
                var lugar = this.posicion;
                return lugar;
              }
-             Jugador.prototype.obtenerCartas = function()
+            Jugador.prototype.obtenerCartas = function()
              {
                var cartas = new Array();
                cartas[0]=this.carta1;
@@ -343,7 +345,83 @@ de las posiciones de las cartas, obtenerCapital el cual me devuelde el valor que
              }
            }
            Jugador._iniciado = true;
-       }
+}
+       /*
+       Creaccion de clase Juego, es la clase donde se rigen las reglas del juego.
+      */
+
+       var Juego = function()
+       {
+
+        if( typeof Juego._iniciado == "undefined" )
+        {
+            Juego.prototype.iniciar = function ()
+            {
+            /*
+            La siguiente porcion de codigo también está arriba en este mismo archivo
+            una vez se pueda implementar desde esta clase, se debe borrar de arriba
+*/
+            cleanImages(); //mandamos a llamar la funcion para limpiar las imagenes
+  	        crearArreglo(); //volvemos a crear el arreglo de los indices de las cartas
+            var cantidad = document.getElementById("Participantes").value; //obtenemos la cantidad de los jugadores
+
+            if ( cantidad>1 && cantidad<11)
+            {
+              //le repartimos a los jugadores las cartas
+              for(var i=1; i<=cantidad; i++)
+              {
+                document.images
+            		// var j = Math.floor(Math.random()*52+0); //escojer un número random
+            		// var k = Math.floor(Math.random()*52+0); //escojer un número random
+                var aCartasPlayer = new Array();
+                aCartasPlayer = randCarta(2); //Indices
+                iCart1 = aCartasPlayer[0];
+                iCart2 = aCartasPlayer[1];
+                var player = new Jugador(i, iCart1, iCart2);
+                var puesto = player.obtenerPosicion();
+                var money = player.obtenerCapital();
+            		document.images["jugador"+puesto+"a"].src=misImagenes[iCart1]; //se le manda la carta seleccionada por el numero random al jugador
+            		document.images["jugador"+puesto+"b"].src=misImagenes[iCart2]; //se le manda la carta seleccionada por el numero random al jugador
+                document.getElementById("dinero"+puesto).innerHTML=money;
+                /*
+                 Hasta aqui termina
+*/
+                }
+
+            }
+            else
+            {
+            console.log("Deben ser dos jugadores minimo y diez como máximo")
+            }
+        }
+      }
+
+        Juego.prototype.ronda = function()
+        {
+          var siguiente = new Array();
+          siguiente = randCarta(1);
+        /*
+        Asignar cartas al centro de la mesa
+*/
+        }
+
+      Juego._iniciado = true;
+    }
+
+      function randCarta (iCantidad)
+      {
+        var indCartas = new Array();
+        for (var i = 0; i < iCantidad; i++)
+         {
+          var randCarta = Math.floor(Math.random() * misIndices.length); //obtenemos el valor del indice de la segunda carta
+          var cartaRandom = misIndices[randCarta]; //obtenemos el valor que esta guardado en nuesto indice
+          misIndices.splice(randCarta, 1); // borramos el indice que ya se ocupo para que no se repitan las
+          indCartas[i] = cartaRandom;
+          }
+          return indCartas;
+        }
+
+
     </script>
   </body>
 </html>
